@@ -1,58 +1,53 @@
-Weather Classification & Prediction Project
-📝 Project Overview
-This project aims to classify and predict weather types (Rainy, Cloudy, Sunny, Snowy) based on various environmental and atmospheric features. The project covers the end-to-end Machine Learning pipeline, including data manipulation, exploratory data analysis (EDA), and data visualization.
+# Weather Classification & Prediction Project
 
-📁 Dataset Details
-The dataset used is weather_classification_data.csv, which consists of 13,200 records.
+## 📝 Project Overview
+This project focuses on classifying and predicting weather types (Rainy, Cloudy, Sunny, Snowy) based on various environmental and atmospheric features. The workflow covers the complete Machine Learning pipeline, including data preprocessing, exploratory data analysis (EDA), visualization, and modeling.
 
-Key Features:
-Temperature: Range from -25.0°C to 109.0°C.
+## 📁 Dataset Details
+The dataset used: `weather_classification_data.csv`  
+Total Records: 13,200  
 
-Humidity: Air moisture percentage.
+### Key Features:
+- **Temperature (°C):** Range from -25.0 to 109.0  
+- **Humidity (%):** Air moisture percentage  
+- **Wind Speed (km/h):** Speed of wind in the area  
+- **Precipitation (%):** Chance of rainfall or snow  
+- **Atmospheric Pressure (hPa):** Air pressure readings  
+- **UV Index:** Ultraviolet radiation levels  
+- **Visibility (km):** Visual range  
+- **Categorical Features:** Cloud Cover, Season (Winter, Spring, Autumn, Summer), Location (Inland, Mountain, Coastal)  
 
-Wind Speed: Speed of wind in the area.
+### Target Variable:
+- **Weather Type:** Rainy, Cloudy, Sunny, Snowy
 
-Precipitation (%): Chance of rainfall/snow.
+## 🛠️ Project Workflow
 
-Atmospheric Pressure: Air pressure readings.
+### 1. Data Manipulation & Cleaning
+- **Library Used:** `pandas` for data manipulation  
+- **Inspecting Data:** `.head()`, `.describe()`, `.info()`  
+- **Feature Selection:** Column & row selection using `.iloc`  
+- **Handling Missing Values:** Dataset verified to have **0 missing values** across all features  
 
-UV Index: Ultraviolet radiation levels.
+### 2. Exploratory Data Analysis (EDA)
+- Calculated statistical measures (Mean, Max, Min) for temperature and other features  
+- Seasonal analysis revealed **Winter** as the most frequent season (5,610 entries)  
 
-Visibility (km): Visual range.
+### 3. Data Visualization
+- **Library Used:** `matplotlib.pyplot`  
+- **Techniques:** Histograms and plots to visualize the relationship between temperature, seasons, and other atmospheric variables  
 
-Categorical Features: Cloud Cover, Season (Winter, Spring, Autumn, Summer), and Location (Inland, Mountain, Coastal).
+## 🚀 Getting Started
+### Prerequisites
+To run this project locally, ensure you have the following Python libraries installed:
 
-Target Variable: Weather Type (Rainy, Cloudy, Sunny, Snowy).
+## Results & Insights
 
-🛠️ Project Workflow
-1. Data Manipulation & Cleaning
-Library Used: pandas for data reshaping and manipulation.
+- The dataset shows a wide range of temperatures (-25°C to 109°C), indicating diverse environmental conditions
+- Data preprocessing ensured zero null values and proper feature selection
+- Visualizations helped identify patterns in weather conditions across seasons and locations
 
-Inspecting Data: Utilized .head(), .describe(), and .info() to understand the dataset structure.
+## 👤 Author
 
-Feature Selection: Performed column and row selection using .iloc and specific index mapping.
-
-Handling Missing Values: Verified that the dataset contains 0 missing values across all 11 columns.
-
-2. Exploratory Data Analysis (EDA)
-Analyzed statistical measures (Mean, Max, Min) for temperature.
-
-Seasonal Analysis: Identified that "Winter" is the most frequent season in the dataset with 5,610 entries.
-
-3. Data Visualization
-Library Used: matplotlib.pyplot.
-
-Techniques: Generated histograms to visualize the distribution of seasons against temperature and other atmospheric variables to identify trends.
-
-🚀 Getting Started
-Prerequisites
-To run the notebook locally, you will need the following Python libraries:
-
-
-📊 Results & Insights
-The dataset shows a wide range of temperatures (-25°C to 109°C), indicating diverse environmental conditions.
-
-The project successfully prepared the data for classification by ensuring zero null values and proper feature scaling/selection.
-
-👤 Author
-Hafiz M. Faizan
+Hafiz Muhammad Faizan
+GitHub: https://github.com/thehmfpk
+Portfolio: www.hafizmuhammadfaizan.site
